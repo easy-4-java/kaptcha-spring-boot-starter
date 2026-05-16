@@ -1,0 +1,440 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 2.3.x.20240823.RELEASE[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/github/penggle/kaptcha/2.3.2/kaptcha-2.3.2.pom
+Downloaded from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/github/penggle/kaptcha/2.3.2/kaptcha-2.3.2.pom (0 B at 0 B/s)
+Downloading from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/jhlabs/filters/2.0.235-1/filters-2.0.235-1.pom
+Downloaded from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/jhlabs/filters/2.0.235-1/filters-2.0.235-1.pom (0 B at 0 B/s)
+Downloading from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/github/penggle/kaptcha/2.3.2/kaptcha-2.3.2.jar
+Downloading from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/jhlabs/filters/2.0.235-1/filters-2.0.235-1.jar
+Downloaded from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/jhlabs/filters/2.0.235-1/filters-2.0.235-1.jar (0 B at 0 B/s)
+Downloaded from aiban-tianyin-core: https://aiban-maven.pkg.coding.net/repository/tianyin/core/com/github/penggle/kaptcha/2.3.2/kaptcha-2.3.2.jar (0 B at 0 B/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 0 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Not copying test resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Not compiling test sources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:jar[m [1m(default-jar)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.2.1:jar-no-fork[m [1m(attach-sources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.jar to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.jar
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/pom.xml to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.pom
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE-sources.jar to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-deploy-plugin:2.8.2:deploy[m [1m(default-deploy)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Using alternate deployment repository maven-releases::default::https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.jar
+Progress (1): 4.1/17 kB
+Progress (1): 8.2/17 kB
+Progress (1): 12/17 kB 
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.jar (17 kB at 12 kB/s)
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.pom
+Progress (1): 4.1/17 kB
+Progress (1): 8.2/17 kB
+Progress (1): 12/17 kB 
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE.pom (17 kB at 16 kB/s)
+Downloading from maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml
+Progress (1): 358 B
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml (358 B at 333 B/s)
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE-sources.jar
+Progress (1): 4.1/16 kB
+Progress (1): 8.2/16 kB
+Progress (1): 12/16 kB 
+Progress (1): 16 kB   
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.3.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.3.x.20240823.RELEASE-sources.jar (16 kB at 17 kB/s)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  6.267 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:02:55+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[kaptcha-spring-boot-starter/2.3.x] 成功
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 2.7.x.20240823.RELEASE[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.2.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 0 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Not copying test resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Not compiling test sources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:jar[m [1m(default-jar)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.2.1:jar-no-fork[m [1m(attach-sources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.jar to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.jar
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/pom.xml to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.pom
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE-sources.jar to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-deploy-plugin:2.8.2:deploy[m [1m(default-deploy)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Using alternate deployment repository maven-releases::default::https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.jar
+Progress (1): 4.1/17 kB
+Progress (1): 8.2/17 kB
+Progress (1): 12/17 kB 
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.jar (17 kB at 13 kB/s)
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.pom
+Progress (1): 4.1/17 kB
+Progress (1): 8.2/17 kB
+Progress (1): 12/17 kB 
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE.pom (17 kB at 16 kB/s)
+Downloading from maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml
+Progress (1): 358 B
+                   
+Downloaded from maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml (358 B at 1.6 kB/s)
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml
+Progress (1): 406 B
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml (406 B at 445 B/s)
+Uploading to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE-sources.jar
+Progress (1): 4.1/16 kB
+Progress (1): 8.2/16 kB
+Progress (1): 12/16 kB 
+Progress (1): 16 kB   
+                   
+Uploaded to maven-releases: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-releases/com/github/hiwepy/kaptcha-spring-boot-starter/2.7.x.20240823.RELEASE/kaptcha-spring-boot-starter-2.7.x.20240823.RELEASE-sources.jar (16 kB at 15 kB/s)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  5.320 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:01+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[kaptcha-spring-boot-starter/2.7.x] 成功
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 3.0.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.303 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:02+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/3.0.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 3.1.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.269 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:02+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/3.1.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 3.2.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.262 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:03+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/3.2.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 3.3.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.260 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:03+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/3.3.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 3.4.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.270 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:04+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/3.4.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 3.5.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.252 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:05+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/3.5.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 4.0.x.20251227-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.4.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.278 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:05+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.5.0:enforce[m [1m(default-cli)[m on project [36mkaptcha-spring-boot-starter[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion failed with message:[m
+[[1;31mERROR[m] [1;31mYou are running an older version of Maven. This application requires at least Maven 3.9.9.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[kaptcha-spring-boot-starter/4.0.x] 失败 - 查看日志
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mio.github.hiwepy:kaptcha-spring-boot-starter[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding io.github.hiwepy:kaptcha-spring-boot-starter 2.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0:enforce[m [1m(default-cli)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 0 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Not copying test resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Not compiling test sources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:jar[m [1m(default-jar)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.2.1:jar-no-fork[m [1m(attach-sources)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT.jar to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/pom.xml to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] Installing /Users/wandl/workspaces/workspace-ddd4j/workspace-ddd4j-boot-starters/kaptcha-spring-boot-starter/target/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT-sources.jar to /Users/wandl/.m2/repository/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-SNAPSHOT-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-deploy-plugin:2.8.2:deploy[m [1m(default-deploy)[m @ [36mkaptcha-spring-boot-starter[0;1m ---[m
+[[1;34mINFO[m] Using alternate deployment repository maven-snapshots::default::https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots
+Downloading from maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/maven-metadata.xml
+Uploading to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-20260316.060307-1.jar
+Progress (1): 4.1/17 kB
+Progress (1): 8.2/17 kB
+Progress (1): 12/17 kB 
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Uploaded to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-20260316.060307-1.jar (17 kB at 14 kB/s)
+Uploading to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-20260316.060307-1.pom
+Progress (1): 4.1/17 kB
+Progress (1): 8.2/17 kB
+Progress (1): 12/17 kB 
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Uploaded to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-20260316.060307-1.pom (17 kB at 14 kB/s)
+Downloading from maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml
+Uploading to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 794 B
+                   
+Uploaded to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/maven-metadata.xml (794 B at 694 B/s)
+Uploading to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml
+Progress (1): 304 B
+                   
+Uploaded to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/maven-metadata.xml (304 B at 307 B/s)
+Uploading to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-20260316.060307-1-sources.jar
+Progress (1): 4.1/16 kB
+Progress (1): 8.2/16 kB
+Progress (1): 12/16 kB 
+Progress (1): 16 kB   
+                   
+Uploaded to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/kaptcha-spring-boot-starter-2.0.1-20260316.060307-1-sources.jar (16 kB at 14 kB/s)
+Uploading to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.0 kB
+                    
+Uploaded to maven-snapshots: https://packages.aliyun.com/5fdc0afd99b59ba3c5ead757/maven/maven-snapshots/com/github/hiwepy/kaptcha-spring-boot-starter/2.0.1-SNAPSHOT/maven-metadata.xml (1.0 kB at 1.0 kB/s)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  7.926 s
+[[1;34mINFO[m] Finished at: 2026-03-16T14:03:14+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[kaptcha-spring-boot-starter/master] 成功
