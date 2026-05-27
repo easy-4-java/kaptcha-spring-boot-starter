@@ -54,7 +54,7 @@ public class KaptchaJakartaServlet extends HttpServlet implements Servlet {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see javax.servlet.Servlet#init(javax.servlet.ServletConfig)
+	 * @see jakarta.servlet.Servlet#init(jakarta.servlet.ServletConfig)
 	 */
 	@Override
 	public void init(ServletConfig conf) throws ServletException {
