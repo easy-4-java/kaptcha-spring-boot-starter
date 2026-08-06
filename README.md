@@ -13,7 +13,7 @@
 
 ``` xml
 <dependency>
-	<groupId>io.github.hiwepy</groupId>
+	<groupId>io.github.easy4j</groupId>
 	<artifactId>kaptcha-spring-boot-starter</artifactId>
 	<version>${project.version}</version>
 </dependency>
