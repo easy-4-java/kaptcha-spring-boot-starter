@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, hiwepy (https://github.com/easy-4-java).
+ * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,19 +15,24 @@
  */
 package com.google.code.kaptcha.spring.boot.exception;
 
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 /**
- * 验证码已经过期异常
+ * Unit tests for {{ @link CaptchaNotFoundException }}.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 1.0.0
  */
-@SuppressWarnings("serial")
-public class CaptchaTimeoutException extends Exception {
+@DisplayName("CaptchaNotFoundException Tests")
+class CaptchaNotFoundExceptionTest {
 
-	public CaptchaTimeoutException() {
-        super("captcha expired");
+    @Test
+    @DisplayName("Instance can be created via constructor")
+    void testInstantiation() {
+        CaptchaNotFoundException instance = new CaptchaNotFoundException();
+        assertThat(instance).isNotNull();
     }
-
-    public CaptchaTimeoutException(String message) {
-        super(message);
-    }
-    
 }
