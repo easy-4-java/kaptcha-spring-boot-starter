@@ -18,6 +18,9 @@ package com.google.code.kaptcha.spring.boot;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+
+import com.google.code.kaptcha.spring.boot.servlet.KaptchaJakartaServlet;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -43,17 +46,42 @@ class KaptchaAutoConfigurationTest {
     }
 
     @Test
-    @DisplayName("Auto-configuration loads when 'spring.boot.enabled=true'")
-    void testLoadsWhenEnabledPropertySet() {
+    @DisplayName("Loads configuration and registers kaptchaResolver + servlet registration bean")
+    void testLoadsAndRegistersBeans() {
         runner.withUserConfiguration(KaptchaAutoConfiguration.class)
-                .withPropertyValues("spring.boot.enabled=true")
-                .run(context -> assertThat(context).hasSingleBean(KaptchaAutoConfiguration.class));
+                .run(context -> {
+                    assertThat(context).hasSingleBean(KaptchaAutoConfiguration.class);
+                    assertThat(context).hasSingleBean(KaptchaResolver.class);
+                    assertThat(context).hasBean("servletRegistrationBean");
+
+                    KaptchaResolver resolver = context.getBean(KaptchaResolver.class);
+                    assertThat(resolver).isInstanceOf(SessionKaptchaResolver.class);
+
+                    ServletRegistrationBean<?> registration = context.getBean(
+                            "servletRegistrationBean", ServletRegistrationBean.class);
+                    assertThat(registration.getServlet()).isInstanceOf(KaptchaJakartaServlet.class);
+
+                    // default init parameters supplied by the auto-configuration
+                    assertThat(registration.getInitParameters())
+                            .containsEntry("kaptcha.border", "no")
+                            .containsEntry("kaptcha.border.color", "black");
+                });
     }
 
     @Test
-    @DisplayName("Auto-configuration is absent when property is not set")
-    void testNotLoadedWhenPropertyAbsent() {
+    @DisplayName("Custom pattern and parameters are applied to the servlet registration bean")
+    void testCustomParametersApplied() {
         runner.withUserConfiguration(KaptchaAutoConfiguration.class)
-                .run(context -> assertThat(context).doesNotHaveBean(KaptchaAutoConfiguration.class));
+                .withPropertyValues(
+                        "kaptcha.pattern=/my-captcha",
+                        "kaptcha.parameters.kaptcha.textproducer.char.length=6")
+                .run(context -> {
+                    ServletRegistrationBean<?> registration = context.getBean(
+                            "servletRegistrationBean", ServletRegistrationBean.class);
+                    assertThat(registration.getUrlMappings()).contains("/my-captcha");
+                    assertThat(registration.getInitParameters())
+                            .containsEntry("kaptcha.textproducer.char.length", "6");
+                });
     }
+
 }

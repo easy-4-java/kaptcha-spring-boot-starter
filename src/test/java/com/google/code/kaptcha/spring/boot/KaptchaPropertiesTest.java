@@ -15,6 +15,9 @@
  */
 package com.google.code.kaptcha.spring.boot;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -30,96 +33,45 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @DisplayName("KaptchaProperties Tests")
 class KaptchaPropertiesTest {
+
     @Test
-    @DisplayName("Default constructor creates non-null instance")
-    void testDefaultInstance() {
+    @DisplayName("Default constructor creates instance with expected defaults")
+    void testDefaults() {
         KaptchaProperties props = new KaptchaProperties();
-        assertThat(props).isNotNull();
+
+        assertThat(props.getPattern()).isEqualTo("/kaptcha");
+        assertThat(props.getCaptchaTimeout()).isEqualTo(KaptchaProperties.DEFAULT_CAPTCHA_TIMEOUT);
+        assertThat(props.getParameters()).isNotNull().isEmpty();
     }
 
     @Test
-    @DisplayName("Field 'parameters' can be set and read")
-    void testParametersField() {
+    @DisplayName("Getters and setters round-trip all fields")
+    void testGettersAndSetters() {
         KaptchaProperties props = new KaptchaProperties();
-        // Use reflection to set private field (covers all fields including those without setters)
-        try {
-            java.lang.reflect.Field f = KaptchaProperties.class.getDeclaredField("parameters");
-            f.setAccessible(true);
-            f.set(props, null);
-            Object value = f.get(props);
-            assertThat(value).isNotNull();
-        } catch (Exception e) {
-            // Field may have a more complex type; skip silently
-        }
+
+        Map<String, String> params = new HashMap<>();
+        params.put("kaptcha.textproducer.char.length", "6");
+        props.setParameters(params);
+        assertThat(props.getParameters()).isSameAs(params);
+
+        props.setPattern("/custom-kaptcha");
+        assertThat(props.getPattern()).isEqualTo("/custom-kaptcha");
+
+        props.setCaptchaStoreKey("store-key");
+        assertThat(props.getCaptchaStoreKey()).isEqualTo("store-key");
+
+        props.setCaptchaDateStoreKey("date-key");
+        assertThat(props.getCaptchaDateStoreKey()).isEqualTo("date-key");
+
+        props.setCaptchaTimeout(30_000L);
+        assertThat(props.getCaptchaTimeout()).isEqualTo(30_000L);
     }
 
     @Test
-    @DisplayName("Field 'pattern' can be set and read")
-    void testPatternField() {
-        KaptchaProperties props = new KaptchaProperties();
-        // Use reflection to set private field (covers all fields including those without setters)
-        try {
-            java.lang.reflect.Field f = KaptchaProperties.class.getDeclaredField("pattern");
-            f.setAccessible(true);
-            f.set(props, "test");
-            Object value = f.get(props);
-            assertThat(value).isNotNull();
-        } catch (Exception e) {
-            // Field may have a more complex type; skip silently
-        }
-    }
-
-    @Test
-    @DisplayName("Field 'captchaStoreKey' can be set and read")
-    void testCaptchaStoreKeyField() {
-        KaptchaProperties props = new KaptchaProperties();
-        // Use reflection to set private field (covers all fields including those without setters)
-        try {
-            java.lang.reflect.Field f = KaptchaProperties.class.getDeclaredField("captchaStoreKey");
-            f.setAccessible(true);
-            f.set(props, "test");
-            Object value = f.get(props);
-            assertThat(value).isNotNull();
-        } catch (Exception e) {
-            // Field may have a more complex type; skip silently
-        }
-    }
-
-    @Test
-    @DisplayName("Field 'captchaDateStoreKey' can be set and read")
-    void testCaptchaDateStoreKeyField() {
-        KaptchaProperties props = new KaptchaProperties();
-        // Use reflection to set private field (covers all fields including those without setters)
-        try {
-            java.lang.reflect.Field f = KaptchaProperties.class.getDeclaredField("captchaDateStoreKey");
-            f.setAccessible(true);
-            f.set(props, "test");
-            Object value = f.get(props);
-            assertThat(value).isNotNull();
-        } catch (Exception e) {
-            // Field may have a more complex type; skip silently
-        }
-    }
-
-    @Test
-    @DisplayName("Field 'captchaTimeout' can be set and read")
-    void testCaptchaTimeoutField() {
-        KaptchaProperties props = new KaptchaProperties();
-        // Use reflection to set private field (covers all fields including those without setters)
-        try {
-            java.lang.reflect.Field f = KaptchaProperties.class.getDeclaredField("captchaTimeout");
-            f.setAccessible(true);
-            f.set(props, 42L);
-            Object value = f.get(props);
-            assertThat(value).isNotNull();
-        } catch (Exception e) {
-            // Field may have a more complex type; skip silently
-        }
-    }
-
-    @Test
-    @DisplayName("Public constant 'PREFIX' has expected value")
-    void testPREFIXConstant() {
+    @DisplayName("Public constants have expected values")
+    void testConstants() {
         assertThat(KaptchaProperties.PREFIX).isEqualTo("kaptcha");
+        assertThat(KaptchaProperties.DEFAULT_CAPTCHA_TIMEOUT).isEqualTo(60_000L);
     }
+
 }

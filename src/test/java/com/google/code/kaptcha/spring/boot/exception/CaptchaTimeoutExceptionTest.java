@@ -21,26 +21,26 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Unit tests for {{ @link CaptchaIncorrectException }}.
+ * Unit tests for {{ @link CaptchaTimeoutException }}.
  *
  * @author [@Loong Wan](https://github.com/loong10k)
  * @since 1.0.0
  */
-@DisplayName("CaptchaIncorrectException Tests")
-class CaptchaIncorrectExceptionTest {
+@DisplayName("CaptchaTimeoutException Tests")
+class CaptchaTimeoutExceptionTest {
 
     @Test
     @DisplayName("Default constructor uses the standard message")
     void testDefaultConstructor() {
-        CaptchaIncorrectException ex = new CaptchaIncorrectException();
+        CaptchaTimeoutException ex = new CaptchaTimeoutException();
         assertThat(ex).isNotNull();
-        assertThat(ex.getMessage()).isEqualTo("captcha incorrect");
+        assertThat(ex.getMessage()).isEqualTo("captcha expired");
     }
 
     @Test
     @DisplayName("Message constructor uses the provided message")
     void testMessageConstructor() {
-        CaptchaIncorrectException ex = new CaptchaIncorrectException("custom message");
+        CaptchaTimeoutException ex = new CaptchaTimeoutException("custom message");
         assertThat(ex.getMessage()).isEqualTo("custom message");
     }
 

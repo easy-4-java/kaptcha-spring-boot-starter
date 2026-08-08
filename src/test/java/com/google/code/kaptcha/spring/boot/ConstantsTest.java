@@ -35,4 +35,11 @@ class ConstantsTest {
         Constants instance = new Constants();
         assertThat(instance).isNotNull();
     }
+
+    @Test
+    @DisplayName("Session timeout key constant has expected value")
+    void testSessionTimeoutKey() {
+        assertThat(Constants.KAPTCHA_SESSION_TIMEOUT_KEY).isEqualTo("kaptcha.session.timeout");
+    }
+
 }

@@ -30,9 +30,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 class CaptchaNotFoundExceptionTest {
 
     @Test
-    @DisplayName("Instance can be created via constructor")
-    void testInstantiation() {
-        CaptchaNotFoundException instance = new CaptchaNotFoundException();
-        assertThat(instance).isNotNull();
+    @DisplayName("Default constructor uses the standard message")
+    void testDefaultConstructor() {
+        CaptchaNotFoundException ex = new CaptchaNotFoundException();
+        assertThat(ex).isNotNull();
+        assertThat(ex.getMessage()).isEqualTo("no comparable captcha found");
     }
+
+    @Test
+    @DisplayName("Message constructor uses the provided message")
+    void testMessageConstructor() {
+        CaptchaNotFoundException ex = new CaptchaNotFoundException("custom message");
+        assertThat(ex.getMessage()).isEqualTo("custom message");
+    }
+
 }
