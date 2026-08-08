@@ -20,7 +20,7 @@ package com.google.code.kaptcha.spring.boot.ext.exception;
 
 /**
  * 验证码错误异常
- * @author <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 @SuppressWarnings("serial")
 public class CaptchaIncorrectException extends Exception {
