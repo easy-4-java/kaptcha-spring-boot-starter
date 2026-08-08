@@ -35,7 +35,7 @@ import java.util.Properties;
 
 /**
  * This servlet uses the settings passed into it via the Producer api.
- * @author <a href="https://github.com/easy-4-java">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  * {@link com.google.code.kaptcha.servlet.KaptchaServlet}
  */
 @SuppressWarnings("serial")
