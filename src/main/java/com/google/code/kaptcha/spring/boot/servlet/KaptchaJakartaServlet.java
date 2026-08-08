@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, hiwepy (https://github.com/hiwepy).
+ * Copyright (c) 2017, hiwepy (https://github.com/easy-4-java).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -35,7 +35,7 @@ import java.util.Properties;
 
 /**
  * This servlet uses the settings passed into it via the Producer api.
- * @author <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  * {@link com.google.code.kaptcha.servlet.KaptchaServlet}
  */
 @SuppressWarnings("serial")
