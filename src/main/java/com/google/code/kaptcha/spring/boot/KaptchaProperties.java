@@ -10,6 +10,8 @@ public class KaptchaProperties {
 
 	public static final String PREFIX = "kaptcha";
 	public static final long DEFAULT_CAPTCHA_TIMEOUT = 60 * 1000;
+	/** 是否启用验证码自动装配。 */
+	private boolean enabled = true;
 	
 	/**
 	 * 详细参数参见：com.google.code.kaptcha.Constants
@@ -30,6 +32,14 @@ public class KaptchaProperties {
      * 验证码有效期；单位（毫秒），默认 60000
      */
 	private long captchaTimeout = DEFAULT_CAPTCHA_TIMEOUT;
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
 	
 	public Map<String, String> getParameters() {
 		return parameters;

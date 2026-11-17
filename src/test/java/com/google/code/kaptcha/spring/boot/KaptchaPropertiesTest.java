@@ -18,6 +18,8 @@ package com.google.code.kaptcha.spring.boot;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Collections;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -38,19 +40,12 @@ class KaptchaPropertiesTest {
     }
 
     @Test
-    @DisplayName("Field 'parameters' can be set and read")
+    @DisplayName("Custom captcha parameters replace the defaults")
     void testParametersField() {
         KaptchaProperties props = new KaptchaProperties();
-        // Use reflection to set private field (covers all fields including those without setters)
-        try {
-            java.lang.reflect.Field f = KaptchaProperties.class.getDeclaredField("parameters");
-            f.setAccessible(true);
-            f.set(props, null);
-            Object value = f.get(props);
-            assertThat(value).isNotNull();
-        } catch (Exception e) {
-            // Field may have a more complex type; skip silently
-        }
+        assertThat(props.getParameters()).isEmpty();
+        props.setParameters(Collections.singletonMap("kaptcha.textproducer.char.length", "5"));
+        assertThat(props.getParameters()).containsEntry("kaptcha.textproducer.char.length", "5");
     }
 
     @Test

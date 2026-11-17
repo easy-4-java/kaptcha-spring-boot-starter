@@ -17,6 +17,12 @@ package com.google.code.kaptcha.spring.boot;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockHttpServletRequest;
+import org.springframework.mock.web.MockHttpServletResponse;
+
+import java.util.Date;
+
+import com.google.code.kaptcha.spring.boot.ext.SessionKaptchaResolver;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -30,9 +36,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 class SessionKaptchaResolverTest {
 
     @Test
-    @DisplayName("Instance can be created via constructor")
-    void testInstantiation() {
-        SessionKaptchaResolver instance = new SessionKaptchaResolver();
-        assertThat(instance).isNotNull();
+    @DisplayName("Stored captcha accepts case-insensitive match")
+    void testStoredCaptcha() throws Exception {
+        SessionKaptchaResolver resolver = new SessionKaptchaResolver();
+        resolver.init("captcha", "captcha-date", 60000);
+        MockHttpServletRequest request = new MockHttpServletRequest();
+        MockHttpServletResponse response = new MockHttpServletResponse();
+
+        resolver.setCaptcha(request, response, "AbC", new Date());
+
+        assertThat(resolver.validCaptcha(request, "abc")).isTrue();
+        assertThat(resolver.validCaptcha(request, "wrong")).isFalse();
     }
 }
