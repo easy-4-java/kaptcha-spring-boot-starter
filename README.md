@@ -87,14 +87,7 @@ No additional easy4j component dependencies.
 
 Add the dependency above to your `pom.xml`.
 
-### 6.2 Configure
-
-```yaml
-kaptcha:
-  enabled: true
-```
-
-### 6.3 Use the bean
+### 6.2 Start the application
 
 ```java
 @SpringBootApplication
@@ -105,12 +98,36 @@ public class Application {
 }
 ```
 
-Then inject the auto-configured bean in your code:
+The starter registers a servlet at `GET /kaptcha`. Open that URL to fetch the image. The text and creation time are stored in the HTTP session.
+
+### 6.3 Verify the answer
 
 ```java
-@Autowired
-private KaptchaResolver kaptchaResolver;
+import javax.servlet.http.HttpServletRequest;
+import com.google.code.kaptcha.spring.boot.ext.KaptchaResolver;
+import com.google.code.kaptcha.spring.boot.ext.exception.CaptchaIncorrectException;
+import com.google.code.kaptcha.spring.boot.ext.exception.CaptchaTimeoutException;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CaptchaController {
+    private final KaptchaResolver resolver;
+
+    public CaptchaController(KaptchaResolver resolver) {
+        this.resolver = resolver;
+    }
+
+    @PostMapping("/captcha/verify")
+    public boolean verify(HttpServletRequest request, @RequestParam String answer)
+            throws CaptchaIncorrectException, CaptchaTimeoutException {
+        return resolver.validCaptcha(request, answer);
+    }
+}
 ```
+
+Fetch `GET /kaptcha`, then send `POST /captcha/verify?answer=...` with the **same session cookie**. An incorrect answer returns `false`; missing or expired answers raise the resolver exceptions. Map those exceptions to your application's HTTP responses as needed.
 
 ## 7. Configuration Reference
 
@@ -122,8 +139,8 @@ private KaptchaResolver kaptchaResolver;
 
 | Property | Type | Default | Required | Description | Sensitive |
 |---|---|---|:---:|---|:---:|
-| `kaptcha.enabled` | boolean | `true` | No | Enable the starter | No |
-<!-- additional properties below -->
+| `kaptcha.pattern` | string | `/kaptcha` | No | Captcha image servlet path | No |
+| `kaptcha.captcha-timeout` | long | `60000` | No | Answer lifetime in milliseconds | No |
 
 ## 8. Version Lines and Compatibility
 
