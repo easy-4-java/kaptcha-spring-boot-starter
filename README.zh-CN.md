@@ -87,14 +87,7 @@ Starter 自动装配以下 Bean：
 
 在 `pom.xml` 中添加上述依赖。
 
-### 6.2 配置
-
-```yaml
-kaptcha:
-  enabled: true
-```
-
-### 6.3 使用 Bean
+### 6.2 启动应用
 
 ```java
 @SpringBootApplication
@@ -105,12 +98,36 @@ public class Application {
 }
 ```
 
-在业务代码中注入自动装配的 Bean：
+Starter 会自动注册 `GET /kaptcha` 图片接口，验证码文本和生成时间保存在 HTTP Session 中。
+
+### 6.3 校验验证码
 
 ```java
-@Autowired
-private KaptchaResolver kaptchaResolver;
+import javax.servlet.http.HttpServletRequest;
+import com.google.code.kaptcha.spring.boot.ext.KaptchaResolver;
+import com.google.code.kaptcha.spring.boot.ext.exception.CaptchaIncorrectException;
+import com.google.code.kaptcha.spring.boot.ext.exception.CaptchaTimeoutException;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CaptchaController {
+    private final KaptchaResolver resolver;
+
+    public CaptchaController(KaptchaResolver resolver) {
+        this.resolver = resolver;
+    }
+
+    @PostMapping("/captcha/verify")
+    public boolean verify(HttpServletRequest request, @RequestParam String answer)
+            throws CaptchaIncorrectException, CaptchaTimeoutException {
+        return resolver.validCaptcha(request, answer);
+    }
+}
 ```
+
+先请求 `GET /kaptcha`，再携带**同一个 Session Cookie** 请求 `POST /captcha/verify?answer=...`。答案错误时返回 `false`；答案缺失或过期时解析器抛出异常，可按业务需要映射为 HTTP 响应。
 
 ## 7. 配置参考
 
@@ -122,8 +139,8 @@ private KaptchaResolver kaptchaResolver;
 
 | 属性 | 类型 | 默认值 | 必填 | 说明 | 敏感 |
 |---|---|---|:---:|---|:---:|
-| `kaptcha.enabled` | boolean | `true` | 否 | 是否启用 Starter | 否 |
-<!-- 更多属性见下方 -->
+| `kaptcha.pattern` | string | `/kaptcha` | 否 | 验证码图片接口路径 | 否 |
+| `kaptcha.captcha-timeout` | long | `60000` | 否 | 验证码有效期，单位毫秒 | 否 |
 
 ## 8. 版本线与兼容性
 
