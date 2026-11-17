@@ -18,6 +18,9 @@ package com.google.code.kaptcha.spring.boot;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+
+import com.google.code.kaptcha.spring.boot.ext.SessionKaptchaResolver;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -43,17 +46,46 @@ class KaptchaAutoConfigurationTest {
     }
 
     @Test
-    @DisplayName("Auto-configuration loads when 'spring.boot.enabled=true'")
+    @DisplayName("Auto-configuration loads when 'kaptcha.enabled=true'")
     void testLoadsWhenEnabledPropertySet() {
         runner.withUserConfiguration(KaptchaAutoConfiguration.class)
-                .withPropertyValues("spring.boot.enabled=true")
+                .withPropertyValues(
+                        "kaptcha.enabled=true",
+                        "kaptcha.pattern=/verify.jpg",
+                        "kaptcha.captcha-store-key=verify-code",
+                        "kaptcha.captcha-date-store-key=verify-date",
+                        "kaptcha.captcha-timeout=120000",
+                        "kaptcha.parameters[kaptcha.textproducer.char.length]=5")
+                .run(context -> {
+                    assertThat(context).hasSingleBean(KaptchaAutoConfiguration.class);
+                    KaptchaProperties properties = context.getBean(KaptchaProperties.class);
+                    assertThat(properties.isEnabled()).isTrue();
+                    assertThat(properties.getPattern()).isEqualTo("/verify.jpg");
+                    assertThat(properties.getCaptchaStoreKey()).isEqualTo("verify-code");
+                    assertThat(properties.getCaptchaDateStoreKey()).isEqualTo("verify-date");
+                    assertThat(properties.getCaptchaTimeout()).isEqualTo(120000);
+                    SessionKaptchaResolver resolver = context.getBean(SessionKaptchaResolver.class);
+                    assertThat(resolver.getCaptchaStoreKey()).isEqualTo("verify-code");
+                    assertThat(resolver.getCaptchaDateStoreKey()).isEqualTo("verify-date");
+                    assertThat(resolver.getCaptchaTimeout()).isEqualTo(120000);
+                    ServletRegistrationBean<?> registration = context.getBean(ServletRegistrationBean.class);
+                    assertThat(registration.getUrlMappings()).contains("/verify.jpg");
+                    assertThat(registration.getInitParameters()).containsEntry("kaptcha.textproducer.char.length", "5");
+                });
+    }
+
+    @Test
+    @DisplayName("Auto-configuration loads by default")
+    void testLoadedWhenPropertyAbsent() {
+        runner.withUserConfiguration(KaptchaAutoConfiguration.class)
                 .run(context -> assertThat(context).hasSingleBean(KaptchaAutoConfiguration.class));
     }
 
     @Test
-    @DisplayName("Auto-configuration is absent when property is not set")
-    void testNotLoadedWhenPropertyAbsent() {
+    @DisplayName("Auto-configuration is absent when 'kaptcha.enabled=false'")
+    void testNotLoadedWhenDisabled() {
         runner.withUserConfiguration(KaptchaAutoConfiguration.class)
+                .withPropertyValues("kaptcha.enabled=false")
                 .run(context -> assertThat(context).doesNotHaveBean(KaptchaAutoConfiguration.class));
     }
 }

@@ -18,6 +18,8 @@ package com.google.code.kaptcha.spring.boot;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.google.code.kaptcha.spring.boot.ext.Constants;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -30,9 +32,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ConstantsTest {
 
     @Test
-    @DisplayName("Instance can be created via constructor")
-    void testInstantiation() {
-        Constants instance = new Constants();
-        assertThat(instance).isNotNull();
+    @DisplayName("Session timeout property key stays stable")
+    void testSessionTimeoutKey() {
+        assertThat(Constants.KAPTCHA_SESSION_TIMEOUT_KEY).isEqualTo("kaptcha.session.timeout");
     }
 }
