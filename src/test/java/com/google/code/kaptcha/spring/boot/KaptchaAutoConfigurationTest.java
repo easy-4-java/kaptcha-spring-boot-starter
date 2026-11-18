@@ -15,6 +15,7 @@
  */
 package com.google.code.kaptcha.spring.boot;
 
+import com.google.code.kaptcha.spring.boot.ext.KaptchaResolver;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
@@ -51,9 +52,12 @@ class KaptchaAutoConfigurationTest {
     }
 
     @Test
-    @DisplayName("Auto-configuration is absent when property is not set")
-    void testNotLoadedWhenPropertyAbsent() {
+    @DisplayName("Auto-configuration loads with default settings")
+    void testLoadsWithDefaults() {
         runner.withUserConfiguration(KaptchaAutoConfiguration.class)
-                .run(context -> assertThat(context).doesNotHaveBean(KaptchaAutoConfiguration.class));
+                .run(context -> {
+                    assertThat(context).hasSingleBean(KaptchaAutoConfiguration.class);
+                    assertThat(context).hasSingleBean(KaptchaResolver.class);
+                });
     }
 }
