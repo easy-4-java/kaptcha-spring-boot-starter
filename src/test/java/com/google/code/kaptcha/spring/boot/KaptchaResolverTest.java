@@ -15,6 +15,8 @@
  */
 package com.google.code.kaptcha.spring.boot;
 
+import com.google.code.kaptcha.spring.boot.ext.KaptchaResolver;
+import com.google.code.kaptcha.spring.boot.ext.SessionKaptchaResolver;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -30,9 +32,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 class KaptchaResolverTest {
 
     @Test
-    @DisplayName("Instance can be created via constructor")
-    void testInstantiation() {
-        KaptchaResolver instance = new KaptchaResolver();
-        assertThat(instance).isNotNull();
+    @DisplayName("Session resolver implements the servlet resolver contract")
+    void testResolverContract() {
+        assertThat(KaptchaResolver.class.isAssignableFrom(SessionKaptchaResolver.class)).isTrue();
     }
 }

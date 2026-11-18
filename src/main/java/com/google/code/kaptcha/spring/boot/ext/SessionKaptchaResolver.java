@@ -44,7 +44,7 @@ public class SessionKaptchaResolver implements KaptchaResolver {
 	/**
      * 验证码创建时间在Session中存储值的key
      */
-	private String captchaDateStoreKey = CAPTCHA_SESSION_ATTRIBUTE_NAME;
+	private String captchaDateStoreKey = CAPTCHA_DATE_SESSION_ATTRIBUTE_NAME;
 	/**
      * 验证码有效期；单位（毫秒），默认 60000
      */
