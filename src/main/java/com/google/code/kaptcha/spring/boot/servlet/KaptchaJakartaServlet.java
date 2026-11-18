@@ -16,15 +16,15 @@
 package com.google.code.kaptcha.spring.boot.servlet;
 
 import com.google.code.kaptcha.Producer;
-import com.google.code.kaptcha.spring.boot.KaptchaResolver;
+import com.google.code.kaptcha.spring.boot.ext.KaptchaResolver;
 import com.google.code.kaptcha.util.Config;
-import jakarta.servlet.Servlet;
-import jakarta.servlet.ServletConfig;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletOutputStream;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.Servlet;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -54,7 +54,7 @@ public class KaptchaJakartaServlet extends HttpServlet implements Servlet {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see jakarta.servlet.Servlet#init(jakarta.servlet.ServletConfig)
+	 * @see javax.servlet.Servlet#init(javax.servlet.ServletConfig)
 	 */
 	@Override
 	public void init(ServletConfig conf) throws ServletException {
